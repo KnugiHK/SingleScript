@@ -53,6 +53,7 @@ def main(src, dest):
                     if dest_f_pos + byte_to_write > src_size:
                         byte_to_write = src_size - dest_f_pos
                     dest_f.write(src_f.read(byte_to_write))
+                    dest_f.flush()
                     dest_f_pos = dest_f.tell()
                     
                     i += 1
