@@ -74,6 +74,6 @@ if __name__ == "__main__":
         if os.path.isfile(args[0]) and os.path.isfile(args[1]):
             main(args[0], args[1])
         else:
-            exit("Path(s) you entered is not a file")
+            exit("Path(s) you entered is not valid")
     else:
         exit("You must provide exactly two paths.")
