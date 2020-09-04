@@ -57,7 +57,7 @@ def main(src, dest):
                     dest_f_pos = dest_f.tell()
                     
                     i += 1
-                    if timer - last_timer >= 1: # update the rate per second every second
+                    if timer - last_timer >= 1: # update the rate every second
                         last_timer = timer
                         speed = int(byte_to_write/1024/1024 * i)
                         i = 0
