@@ -3,9 +3,9 @@ import ctypes, os
 
 is_windows = (False if os.name != 'nt' else True) #Check if program is running on Windows
 
-#Check if program is running with admin privileges
 if is_windows:
-    try:
+    try:  
+        #Check if program is running with admin privileges
         is_admin = os.getuid() == 0
     except AttributeError:
         is_admin = ctypes.windll.shell32.IsUserAnAdmin() != 0
