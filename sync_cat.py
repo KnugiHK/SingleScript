@@ -48,7 +48,7 @@ def main(src, dest):
                 last_timer = timer = time.time()
                 speed = 0
                 printProgressBar(dest_f_pos, src_size, prefix = 'Syncing file:', suffix = 'Completed (0MB/s)', length = 40)
-                while dest_f_pos < src_size: # this block start to sync the file
+                while dest_f_pos < src_size: # Start to sync file from this block
                     timer = time.time()
                     byte_to_write = SECTOR_SIZE * BYTE_SIZE_MULTIPLIER
                     if dest_f_pos + byte_to_write > src_size:
