@@ -1,5 +1,5 @@
 #include <stdio.h>
-// This is an implementation on calculating the date of Easter.
+// This is an implementation of calculating the date of Easter.
 // Based on: https://github.com/dateutil/dateutil/blob/master/dateutil/easter.py
 
 int main(){
